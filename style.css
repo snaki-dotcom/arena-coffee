@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.lang {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(black, #3e2723);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #c49b63;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+}
+
+.contact {
+  background: #000;
+  padding: 30px;
+}
+
