@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Arena Coffee - Premium Artisan Coffee Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="coffee-loader">
+            <div class="coffee-cup">
+                <div class="coffee-steam"></div>
+            </div>
+            <p>Loading Premium Coffee Experience...</p>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Language Selector with Animation -->
+    <div class="language-selector animate__animated animate__fadeInDown">
+        <button id="lang-toggle" class="lang-btn">
+            <i class="fas fa-globe"></i>
+            <span data-lang="en">EN</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="lang-dropdown">
+            <button class="lang-option animate__animated" data-lang="en">
+                <i class="fas fa-flag-usa"></i> English
+            </button>
+            <button class="lang-option animate__animated" data-lang="fr">
+                <i class="fas fa-flag-france"></i> Français
+            </button>
+            <button class="lang-option animate__animated" data-lang="ar">
+                <i class="fas fa-flag-saudi-arabia"></i> العربية
+            </button>
+        </div>
+    </div>
+
+    <!-- Header with Advanced Effects -->
+    <header class="header animate__animated animate__fadeIn">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo animate__animated animate__pulse">
+                    <h1>A<span class="logo-highlight">RENA</span>COFFEE</h1>
+                    <div class="logo-subtitle" data-lang-key="premium_coffee">Premium Artisan Coffee</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link animate__animated" data-lang-key="nav_home">Home</a></li>
+                    <li><a href="#products" class="nav-link animate__animated" data-lang-key="nav_products">Products</a></li>
+                    <li><a href="#boutique" class="nav-link animate__animated" data-lang-key="nav_boutique">Boutique</a></li>
+                    <li><a href="#gallery" class="nav-link animate__animated" data-lang-key="nav_gallery">Gallery</a></li>
+                    <li><a href="#about" class="nav-link animate__animated" data-lang-key="nav_about">About</a></li>
+                    <li><a href="#testimonials" class="nav-link animate__animated" data-lang-key="nav_testimonials">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link animate__animated" data-lang-key="nav_contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Animated underline indicator -->
+        <div class="nav-indicator"></div>
+    </header>
+
+    <!-- Hero Section with Parallax -->
+    <section id="home" class="hero parallax-section">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-coffee-bean"></div>
+                <div class="floating-coffee-bean"></div>
+                <div class="floating-coffee-bean"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text animate__animated animate__fadeInLeft">
+                    <h2 class="hero-title glitch" data-lang-key="hero_title">PREMIUM QUALITY COFFEE</h2>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp" data-lang-key="hero_subtitle">Experience the perfect blend of tradition and innovation with our carefully selected artisan coffee beans</p>
+                    <div class="hero-stats animate__animated animate__fadeInUp">
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="50">0</h3>
+                            <p data-lang-key="stat_countries">Countries</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="1000">0</h3>
+                            <p data-lang-key="stat_customers">Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="10">0</h3>
+                            <p data-lang-key="stat_years">Years</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons animate__animated animate__fadeInUp">
+                        <a href="#products" class="btn btn-primary btn-animated" data-lang-key="hero_shop_now">
+                            <span>Shop Now</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary btn-animated" data-lang-key="hero_learn_more">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate__animated animate__fadeInRight">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Premium Coffee Beans" class="main-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-coffee"></i>
+                                <span data-lang-key="premium_quality">Premium Quality</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down animate__animated animate__bounce">
+            <a href="#products">
+                <div class="mouse">
+                    <span></span>
+                </div>
+                <p data-lang-key="scroll_down">Scroll Down</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="products_title">Our Coffee Selection</h2>
+                <p data-lang-key="products_subtitle">Discover our premium coffee varieties, available in beans or ground</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1512632569297-93ace4dee695?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Indonesian Coffee">
+                        <div class="product-badge" data-lang-key="popular_badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="product_indonesian">Indonesian Coffee</h3>
+                        <p data-lang-key="product_indonesian_desc">Rich and earthy Indonesian coffee beans with distinctive full-bodied flavor</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                            <span class="roast" data-lang-key="medium_roast">Medium Roast</span>
+                        </div>
+                        <div class="product-price">150 MAD</div>
+                        <button class="btn btn-small" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Guinean Coffee">
+                        <div class="product-badge" data-lang-key="new_arrival">New Arrival</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="product_guinean">Guinean Coffee</h3>
+                        <p data-lang-key="product_guinean_desc">Premium Guinean coffee with bright acidity and complex fruity notes</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-map-marker-alt"></i> Guinea</span>
+                            <span class="roast" data-lang-key="light_roast">Light Roast</span>
+                        </div>
+                        <div class="product-price">120 MAD</div>
+                        <button class="btn btn-small" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Côte d'Ivoire Coffee">
+                        <div class="product-badge" data-lang-key="best_seller">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="product_brazilian">Côte d'Ivoire Coffee</h3>
+                        <p data-lang-key="product_brazilian_desc">Smooth and nutty Brazilian coffee with low acidity and chocolate notes</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire</span>
+                            <span class="roast" data-lang-key="medium_dark_roast">Medium-Dark Roast</span>
+                        </div>
+                        <div class="product-price">130 MAD</div>
+                        <button class="btn btn-small" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Colombian Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="product_colombian">Colombian Coffee</h3>
+                        <p data-lang-key="product_colombian_desc">Premium Colombian coffee with balanced flavor and caramel sweetness</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-map-marker-alt"></i> Colombia</span>
+                            <span class="roast" data-lang-key="medium_roast">Medium Roast</span>
+                        </div>
+                        <div class="product-price">180 MAD</div>
+                        <button class="btn btn-small" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutique Products Section - With Better Images -->
+    <section id="boutique" class="boutique">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 data-lang-key="boutique_title">Boutique Collection</h2>
+                <p data-lang-key="boutique_subtitle">Premium specialty products and teas</p>
+            </div>
+            <div class="boutique-grid">
+                <!-- Tea Products (30-40 MAD) -->
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624428302871-659b68c41e19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="شاي الناقة Type A">
+                        <div class="product-badge traditional-badge">Type A</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="tea_naca_a">شاي الناقة Type A</h3>
+                        <p data-lang-key="tea_naca_a_desc">Traditional Moroccan camel tea - Basic blend</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-leaf"></i> Traditional</span>
+                            <span class="roast">Basic Blend</span>
+                        </div>
+                        <div class="product-price">32 MAD</div>
+                        <button class="btn btn-small btn-traditional" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624428302871-659b68c41e19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="شاي الناقة Type B">
+                        <div class="product-badge traditional-badge">Type B</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="tea_naca_b">شاي الناقة Type B</h3>
+                        <p data-lang-key="tea_naca_b_desc">Traditional Moroccan camel tea - Premium blend</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-leaf"></i> Traditional</span>
+                            <span class="roast">Premium Blend</span>
+                        </div>
+                        <div class="product-price">35 MAD</div>
+                        <button class="btn btn-small btn-traditional" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597318762035-53061450f15a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="شاي لكرم Classic">
+                        <div class="product-badge luxury-badge">Classic</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="tea_lakram_classic">شاي لكرم Classic</h3>
+                        <p data-lang-key="tea_lakram_classic_desc">Lakram tea classic blend with aromatic spices</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-crown"></i> Classic</span>
+                            <span class="roast">Aromatic Blend</span>
+                        </div>
+                        <div class="product-price">38 MAD</div>
+                        <button class="btn btn-small btn-luxury" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597318762035-53061450f15a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="شاي لكرم Premium">
+                        <div class="product-badge luxury-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="tea_lakram_premium">شاي لكرم Premium</h3>
+                        <p data-lang-key="tea_lakram_premium_desc">Lakram tea premium blend with exotic ingredients</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-crown"></i> Premium</span>
+                            <span class="roast">Exotic Blend</span>
+                        </div>
+                        <div class="product-price">40 MAD</div>
+                        <button class="btn btn-small btn-luxury" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Black Asta Capsules (40-50 MAD) -->
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1611854024006-3dba763ca7b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Black Asta Type 8">
+                        <div class="product-badge premium-badge">Type 8</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="black_asta_8">Black Asta Type 8</h3>
+                        <p data-lang-key="black_asta_8_desc">Premium black coffee capsules - Light intensity</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-mug-hot"></i> Light</span>
+                            <span class="roast">Light Roast</span>
+                        </div>
+                        <div class="product-price">42 MAD</div>
+                        <button class="btn btn-small btn-premium" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1611854024006-3dba763ca7b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Black Asta Type 9">
+                        <div class="product-badge premium-badge">Type 9</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="black_asta_9">Black Asta Type 9</h3>
+                        <p data-lang-key="black_asta_9_desc">Premium black coffee capsules - Medium intensity</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-mug-hot"></i> Medium</span>
+                            <span class="roast">Medium Roast</span>
+                        </div>
+                        <div class="product-price">45 MAD</div>
+                        <button class="btn btn-small btn-premium" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Black Asta Type 10">
+                        <div class="product-badge special-badge">Type 10</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="black_asta_10">Black Asta Type 10</h3>
+                        <p data-lang-key="black_asta_10_desc">Premium black coffee capsules - Strong intensity</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-coffee"></i> Strong</span>
+                            <span class="roast">Strong Roast</span>
+                        </div>
+                        <div class="product-price">47 MAD</div>
+                        <button class="btn btn-small btn-special" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Black Asta Type 11">
+                        <div class="product-badge special-badge">Type 11</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="black_asta_11">Black Asta Type 11</h3>
+                        <p data-lang-key="black_asta_11_desc">Premium black coffee capsules - Extra strong</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-coffee"></i> Extra Strong</span>
+                            <span class="roast">Extra Strong</span>
+                        </div>
+                        <div class="product-price">49 MAD</div>
+                        <button class="btn btn-small btn-special" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card boutique-item animate__animated animate__fadeInUp">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Black Asta Type 12">
+                        <div class="product-badge edition-badge">Type 12</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-lang-key="black_asta_12">Black Asta Type 12</h3>
+                        <p data-lang-key="black_asta_12_desc">Premium black coffee capsules - Maximum intensity</p>
+                        <div class="product-meta">
+                            <span class="origin"><i class="fas fa-star"></i> Maximum</span>
+                            <span class="roast">Maximum Strength</span>
+                        </div>
+                        <div class="product-price">50 MAD</div>
+                        <button class="btn btn-small btn-edition" data-lang-key="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Coffee Farm">
+                </div>
+                <div class="about-text">
+                    <h2 data-lang-key="about_title">Our Story</h2>
+                    <p data-lang-key="about_p1">Founded in 2010, Arena Coffee has been dedicated to bringing exceptional coffee experiences to coffee lovers worldwide.</p>
+                    <p data-lang-key="about_p2">We source our beans directly from sustainable farms, ensuring fair trade practices and the highest quality standards. Our master roasters carefully craft each batch to perfection.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p data-lang-key="stat_countries">Countries Served</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1M+</h3>
+                            <p data-lang-key="stat_customers">Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p data-lang-key="stat_organic">Organic Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="gallery_title">Our Coffee Gallery</h2>
+                <p data-lang-key="gallery_subtitle">Beautiful moments from our coffee journey</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Coffee Beans">
+                    <div class="gallery-overlay">
+                        <h3 data-lang-key="gallery_item1">Premium Coffee Beans</h3>
+                        <p data-lang-key="gallery_desc1">Hand-selected from the finest farms</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Roasting Process">
+                    <div class="gallery-overlay">
+                        <h3 data-lang-key="gallery_item2">Artisan Roasting</h3>
+                        <p data-lang-key="gallery_desc2">Crafted to perfection</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Brewed Coffee">
+                    <div class="gallery-overlay">
+                        <h3 data-lang-key="gallery_item3">Perfect Brew</h3>
+                        <p data-lang-key="gallery_desc3">Freshly prepared for you</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512632569297-93ace4dee695?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Coffee Shop">
+                    <div class="gallery-overlay">
+                        <h3 data-lang-key="gallery_item4">Our Coffee Shop</h3>
+                        <p data-lang-key="gallery_desc4">Welcome to Arena Coffee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="features_title">Why Choose Arena Coffee</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 data-lang-key="feature_sustainable">Sustainable Sourcing</h3>
+                    <p data-lang-key="feature_sustainable_desc">Direct trade relationships with farmers ensuring fair wages and environmental responsibility</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 data-lang-key="feature_roasting">Artisan Roasting</h3>
+                    <p data-lang-key="feature_roasting_desc">Small-batch roasting techniques that bring out the unique characteristics of each bean</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 data-lang-key="feature_delivery">Fast Delivery</h3>
+                    <p data-lang-key="feature_delivery_desc">Fresh roasted coffee delivered to your door within 48 hours of roasting</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 data-lang-key="feature_packaging">Eco-Friendly Packaging</h3>
+                    <p data-lang-key="feature_packaging_desc">100% recyclable and compostable packaging to protect both your coffee and the planet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang-key="contact_title">Get In Touch</h2>
+                <p data-lang-key="contact_subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-lang-key="contact_address">Address</h4>
+                            <p>Oued Fes, Ibnou Tachfine Street</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-lang-key="contact_phone">Phone</h4>
+                            <p id="phone-number" contenteditable="true">[Numéro de téléphone]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-lang-key="contact_email">Email</h4>
+                            <p id="email-address" contenteditable="true">info@arenacoffee.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-lang-key="contact_hours">Opening Hours</h4>
+                            <p id="opening-hours" contenteditable="true" data-lang-key="hours_text">Mon-Fri: 8AM-6PM<br>Sat-Sun: 9AM-5PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-lang-key="send_message">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Arena<span>Coffee</span></h3>
+                    <p data-lang-key="footer_about">Premium coffee sourced sustainably and roasted to perfection for the ultimate coffee experience.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-key="footer_products">Products</h4>
+                    <ul>
+                        <li><a href="#" data-lang-key="footer_arabica">Arabica Beans</a></li>
+                        <li><a href="#" data-lang-key="footer_robusta">Robusta Beans</a></li>
+                        <li><a href="#" data-lang-key="footer_ground">Ground Coffee</a></li>
+                        <li><a href="#" data-lang-key="footer_accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-key="footer_company">Company</h4>
+                    <ul>
+                        <li><a href="#" data-lang-key="footer_about_us">About Us</a></li>
+                        <li><a href="#" data-lang-key="footer_sustainability">Sustainability</a></li>
+                        <li><a href="#" data-lang-key="footer_careers">Careers</a></li>
+                        <li><a href="#" data-lang-key="footer_press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-key="footer_support">Support</h4>
+                    <ul>
+                        <li><a href="#" data-lang-key="footer_shipping">Shipping Info</a></li>
+                        <li><a href="#" data-lang-key="footer_returns">Returns</a></li>
+                        <li><a href="#" data-lang-key="footer_faq">FAQ</a></li>
+                        <li><a href="#" data-lang-key="footer_contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arena Coffee. <span data-lang-key="footer_rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QR Code Modal -->
+    <div id="qr-modal" class="qr-modal">
+        <div class="qr-modal-content">
+            <span class="close-qr">&times;</span>
+            <h3 data-lang-key="scan_qr_title">Scan to Visit Our Website</h3>
+            <div class="qr-code-container">
+                <div id="qr-code"></div>
+                <p data-lang-key="scan_qr_subtitle">Point your phone camera at this QR code to access our online store</p>
+            </div>
+            <div class="qr-share-buttons">
+                <button id="download-qr" class="btn btn-secondary" data-lang-key="download_qr">Download QR Code</button>
+                <button id="share-qr" class="btn btn-primary" data-lang-key="share_qr">Share QR Code</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code Button -->
+    <button id="qr-button" class="qr-button">
+        <i class="fas fa-qrcode"></i>
+        <span data-lang-key="show_qr">Show QR Code</span>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="enhanced-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
